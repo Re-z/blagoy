@@ -63,9 +63,9 @@ $('.bar__nav-has-dd').click(function(){
 $('body').click(function(){
 	$('.bar__catalogue').slideUp()
 });
-//$('.bar__catalogue, .bar__subcatalogue').click(function(){
-//	return false;
-//});
+$('.bar__catalogue').click(function(){
+	event.stopPropagation();
+});
 
 
 //slider
